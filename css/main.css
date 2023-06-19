@@ -5,6 +5,9 @@
 section:not(:first-of-type) {
   margin: 60px 0;
 }
+a {
+  text-decoration: none;
+}
 /* sup-btn */
 .sup-btn {
   margin-top: 30px;
@@ -469,6 +472,72 @@ ul li.border-color h4::before {
   background-color: var(--mainColor) !important;
   color: white !important;
 }
+.footer-btn-move {
+  animation: footerBtnMove 1s infinite forwards;
+}
+/* contact section */
+.contact-head {
+  height: 400px;
+  background-image: url(../image/abt-ban.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.a-hover a {
+  transition: 0.3s all;
+}
+.a-hover a:hover {
+  color: var(--mainColor) !important;
+}
+
+.a-hover a:hover + i {
+  animation: a-ihover-move 1s infinite backwards;
+}
+.form-input i {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 10px;
+}
+.form-input input {
+  padding-left: 30px;
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 0;
+}
+.form-input input:hover {
+  border-color: var(--mainColor);
+}
+.form-input input:focus {
+  box-shadow: none;
+  border-color: var(--mainColor);
+}
+.form-input.text-form i {
+  top: 20px;
+  transform: 0;
+}
+.form-input.text-form textarea {
+  padding-left: 40px;
+}
+.form-input.text-form textarea {
+  border-bottom: 1px solid !important;
+  border-radius: 0;
+  resize: none;
+}
+.form-input.text-form textarea:hover {
+  border-color: var(--mainColor) !important;
+}
+.form-input.text-form textarea:focus {
+  box-shadow: none;
+  border-color: var(--mainColor) !important;
+}
+.form-btn-hover {
+  transition: 0.3s all;
+}
+.form-btn-hover button:hover {
+  background-color: black !important;
+  color: white !important;
+}
 @keyframes arrowMove {
   0%,
   100% {
@@ -476,5 +545,23 @@ ul li.border-color h4::before {
   }
   50% {
     transform: translateX(15px);
+  }
+}
+@keyframes footerBtnMove {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+@keyframes a-ihover-move {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
   }
 }

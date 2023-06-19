@@ -46,6 +46,9 @@
   .pricing-btn {
     flex: 1;
   }
+  .contact-header-font {
+    font-size: 3rem ;
+  }
 }
 @media (max-width: 1110px) {
 }
@@ -96,6 +99,9 @@
   }
   .icont-rbw h4 {
     font-size: 1.2rem !important;
+  }
+  .contact-header-font {
+    font-size: 1.5rem ;
   }
 }
 @media (max-width: 800px) {
