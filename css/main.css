@@ -162,7 +162,6 @@ header {
   height: 75vh;
 }
 header .carousel.slide {
-  /* h-100 */
   height: 100%;
 }
 header .carousel-inner {
@@ -175,7 +174,6 @@ header .carousel-caption {
   right: unset;
   left: unset;
   bottom: unset;
-  /* start-50 */
   left: 50%;
   top: 30%;
   transform: translateX(-50%);
@@ -191,9 +189,7 @@ header .carousel-caption h5 + p {
   text-transform: capitalize;
 }
 header .carousel-indicators {
-  /* flex-column */
   flex-direction: column;
-  /* align-items-end */
   align-items: flex-end;
   margin-right: 5%;
   height: 100%;
@@ -201,7 +197,6 @@ header .carousel-indicators {
 header .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
-  /* border border-transparent */
   border: 2px solid transparent;
   transition: 0.5s all;
   margin: 10px 0;
@@ -217,9 +212,9 @@ header .carousel-indicators [data-bs-target].active {
   background-color: #f9f9f9;
   margin-bottom: 0 !important;
 }
-.right-icon {
-  /* width: 75px;
-  height: 75px; */
+.icon-section .right-icon {
+  width: 75px;
+  height: 75px; 
   text-align: center;
   display: flex;
   justify-content: center;
@@ -538,6 +533,98 @@ ul li.border-color h4::before {
   background-color: black !important;
   color: white !important;
 }
+/* About Section */
+.about-icon-hover {
+  padding: 10px;
+  transition: 0.5s all;
+}
+.about-icon-hover:hover {
+  box-shadow: 0px 0px 10px black;
+  transform: translateY(-10px);
+}
+.about-icon-hover h4,
+.about-icon-hover i {
+  transition: 0.5s all;
+}
+.about-icon-hover:hover i {
+  color: black !important;
+}
+.about-icon-hover:hover h4,
+.about-icon-hover:hover p {
+  color: var(--mainColor) !important;
+}
+.our-strong-p p:not(:first-of-type) {
+  position: relative;
+  padding-left: 20px;
+}
+.our-strong-p p:not(:first-of-type)::before {
+  content: "\f101";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+}
+.brogras-bar {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pragres-move 2s infinite linear;
+}
+.bro-parent {
+  width: fit-content;
+  border: 10px solid black;
+  border-radius: 50%;
+}
+.brogras-content {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border: 1px solid #0d6efd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px black;
+}
+.about-shadow {
+  box-shadow: 0 0 50px rgba(1, 53, 50, 0.4);
+}
+
+.bg-move {
+  width: 100%;
+  bottom: 0;
+  height: 0;
+  background-color: var(--mainColor);
+  z-index: -1;
+  transition: 0.4s all;
+  border-radius: 5px;
+}
+.about-card-hover:hover .bg-move {
+  height: 100%;
+}
+.about-icon-move {
+  transition: 0.4s  all;
+  top: 50%;
+
+}
+.about-card-hover:hover .about-icon-move {
+  top: 100%;
+}
+.about-box {
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.about-box h4:hover {
+  color: var(--mainColor);
+}
 @keyframes arrowMove {
   0%,
   100% {
@@ -563,5 +650,71 @@ ul li.border-color h4::before {
   }
   50% {
     transform: translateX(10px);
+  }
+}
+@keyframes pragres-move {
+  0% {
+    background: conic-gradient(black 0deg, white 0deg);
+  }
+
+  5% {
+    background: conic-gradient(black 10deg, white 0deg);
+  }
+  10% {
+    background: conic-gradient(black 30deg, white 0deg);
+  }
+  15% {
+    background: conic-gradient(black 50deg, white 0deg);
+  }
+  20% {
+    background: conic-gradient(black 80deg, white 0deg);
+  }
+  25% {
+    background: conic-gradient(black 100deg, white 0deg);
+  }
+  30% {
+    background: conic-gradient(black 120deg, white 0deg);
+  }
+  35% {
+    background: conic-gradient(black 150deg, white 0deg);
+  }
+  40% {
+    background: conic-gradient(black 170deg, white 0deg);
+  }
+  50% {
+    background: conic-gradient(black 190deg, white 0deg);
+  }
+  60% {
+    background: conic-gradient(black 220deg, white 0deg);
+  }
+  70% {
+    background: conic-gradient(black 250deg, white 0deg);
+  }
+  80% {
+    background: conic-gradient(black 280deg, white 0deg);
+  }
+  90% {
+    background: conic-gradient(black 300deg, white 0deg);
+  }
+  100% {
+    background: conic-gradient(black 320deg, white 0deg);
+  }
+}
+
+@keyframes div-move {
+  0% {
+    bottom: 100%;
+    opacity: 0;
+  }
+  50% {
+    bottom: 0;
+    opacity: 0;
+  }
+  70% {
+    bottom: -20px;
+    opacity: 0;
+  }
+  100% {
+    bottom:-30px ;
   }
 }

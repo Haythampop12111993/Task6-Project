@@ -163,6 +163,12 @@
     gap: 5px !important ;
     padding: 5px !important;
   }
+  .sup-head h2::before , .sup-head h2::after ,.sup-head h2 span ,.sup-head h2 span:last-of-type ,.clients-bef-aftr::before ,.clients-bef-aftr::after {
+    display: none;
+  }
+  .clients-bef-aftr {
+    margin: auto;
+  }
 }
 @media (max-width: 391px) {
   .team-img-move {
