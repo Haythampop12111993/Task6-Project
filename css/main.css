@@ -625,6 +625,11 @@ ul li.border-color h4::before {
 .about-box h4:hover {
   color: var(--mainColor);
 }
+.top-btm-move {
+  position: fixed;
+  right: 100px;
+  z-index: 9999;
+}
 @keyframes arrowMove {
   0%,
   100% {

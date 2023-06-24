@@ -253,52 +253,58 @@
         <h2><span></span>Get In Touch<span></span></h2>
       </div>
       <div class="container">
-        <form action="">
+        <form id="inPutid" action="">
           <div class="row justify-content-center align-items-center g-3">
             <div class="col-lg-4 col-md-6 col-12">
-              <div class="form-input position-relative">
-                <i class="f-smoll fa-regular fa-user position-absolute"></i>
-                <input
-                  required
-                  placeholder="Name"
-                  class="form-control"
-                  type="text"
-                  name=""
-                  id=""
-                />
+              <div class="form-input">
+                <div class="position-relative">
+                  <i class="f-smoll fa-regular fa-user position-absolute"></i>
+                  <input
+                    placeholder="Name"
+                    class="form-control"
+                    type="text"
+                    id=""
+                    name="Name"
+                  />
+                </div>
+                <p id="inputMassg0"></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="form-input">
+                <div class="position-relative">
+                  <i class="f-smoll fa-solid fa-envelope position-absolute"></i>
+                  <input
+                    placeholder="Email"
+                    class="form-control"
+                    type="email"
+                    id=""
+                    name="Email"
+                  />
+                </div>
+                <p id="inputMassg1"></p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
               <div class="form-input position-relative">
-                <i class=" f-smoll fa-solid fa-envelope position-absolute"></i>
-                <input
-                  required
-                  placeholder="Email"
-                  class="form-control"
-                  type="email"
-                  name=""
-                  id=""
-                />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="form-input position-relative">
-                <i class="f-smoll fa-solid fa-pen position-absolute"></i>
-                <input
-                  placeholder="Subject"
-                  required
-                  class="form-control"
-                  type="text"
-                  name=""
-                  id=""
-                />
+                <div class="position-relative">
+                  <i class="f-smoll fa-solid fa-pen position-absolute"></i>
+                  <input
+                    placeholder="Subject"
+                    class="form-control"
+                    type="text"
+                    id=""
+                    name="Subject"
+                  />
+                </div>
+                <p id="inputMassg2"></p>
               </div>
             </div>
             <div class="col-12">
               <div class="f-smoll form-input position-relative text-form">
                 <i class="fa-solid fa-pen position-absolute"></i>
                 <textarea
-                placeholder="Your Massage"
+                  placeholder="Your Massage"
                   class="form-control border-0 text-form"
                   name=""
                   id=""
@@ -309,7 +315,9 @@
             </div>
           </div>
           <div class="my-4 form-btn-hover">
-            <button class="btn btn-primary rounded-pill px-4 fs-5 fw-semibold ">Send Massage</button>
+            <button onclick="" class="btn btn-primary rounded-pill px-4 fs-5 fw-semibold">
+              Send Massage
+            </button>
           </div>
         </form>
       </div>
@@ -560,7 +568,11 @@
           </div>
         </div>
         <div class="">
-          <button class="btn bg-primary  rounded-circle position-absolute end-0 footer-btn-move"><a href="#"><i class="fa-solid fa-angle-up text-white"></i></a></button>
+          <button
+            class="btn bg-primary rounded-circle position-absolute end-0 footer-btn-move"
+          >
+            <a href="#"><i class="fa-solid fa-angle-up text-white"></i></a>
+          </button>
         </div>
       </div>
       <div
@@ -570,12 +582,9 @@
           &COPY;2019 Developed By DTM Theme
         </p>
       </div>
-
     </footer>
 
-
-
-
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
